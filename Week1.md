@@ -40,6 +40,7 @@ Now that we're logged in, we'll try out some commands in the terminal. Below is 
 * `ls` → lists the files and folders in the current directory 
 * `cat <file1>` prints the contents of one or more files
 * `pwd` prints the directory the shell is working from
+![commands](commands.png)
 ## Moving Files With scp
 One of the greatest benefits of remote connection is the ability to copy files back and forth between computers. To do this, we use the command `scp` from the *client*, **your** computer. Log out of SSH by using the command `exit`.
 
@@ -83,11 +84,20 @@ To set this up, log out of your CSE 15L account and run the command `ssh-keygen`
 Now we need to copy our *public key* to the `.ssh` directory of your CSE 15L account on the server.  
 Log into `ssh`, use the command `mkdir .ssh`, and `exit` to log back out. Note that nothing will happen when you run the `mkdir .ssh` command.  
 
-From the client, we'll now `scp` the file used to save our *public key*. When I did this nothing happened.
+From the client, we'll now `scp` the file used to save our *public key*. When I did this nothing happened. I think I must have done something wrong with the `mkdir .ssh` command.
+![failure](fail.png)
 ## Optimizing Remote Running
 Now that we've learned so much about remote access, there are a few tricks we can use to make our work between two computers even easier. Some of these are:  
 * logging into `ssh` and calling a command at the same time. For example:  
 `ssh cs15lfa22zz@ieng6.ucsd.edu "ls"`
 * running multiple commands on the same line by separating them with semicolons. For example:  
 `cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI`
-* Using the up-arrow to repeat previous commands.
+* Using the up-arrow to repeat previous commands.  
+Below is an example of using a command while logging into `ssh` at the same time.
+![double](double.png)  
+
+That completes Lab Report #1.  
+I hope you enjoyed it!  
+
+[Click here to go back to the top of this page.](#Week-1-Lab-Report:-Remote-Access)
+
