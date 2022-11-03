@@ -1,2 +1,3 @@
 
-![image](screenshot.png)
+[another file](another-file.md)
+]
