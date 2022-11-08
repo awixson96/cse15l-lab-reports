@@ -99,5 +99,5 @@ Below is an example of using a command while logging into `ssh` at the same time
 That completes Lab Report #1.  
 I hope you enjoyed it!  
 
-[Return to the top of this page.](#Week-1-Lab-Report:-Remote-Access)
+[Return to the top of this page.](#week-1-lab-report-remote-access)
 
