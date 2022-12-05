@@ -1,4 +1,5 @@
 # Week 3 Lab Report: Servers and Bugs
+---
 
 ## Part I - Simplest Search Engine
 
